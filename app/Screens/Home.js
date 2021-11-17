@@ -2,7 +2,7 @@ import React from 'react';
 import { ScrollView, Text,View,StyleSheet,Image,TextInput,Dimensions} from 'react-native';
 import { Ionicons,EvilIcons,FontAwesome,AntDesign,Entypo } from "@expo/vector-icons";
 import { FlatList, TouchableOpacity } from 'react-native-gesture-handler';
-import Hairs from '../Const/Hairs';
+import Suits from '../Const/Suits';
 const width = Dimensions.get('screen').width / 2 - 30;
 
 
@@ -101,7 +101,7 @@ function Home(props) {
           marginTop:10,
           paddingBottom:50,
         }}
-        numColumns={2} data={Hairs}  renderItem={({item})=> <Card Hair={item}/>}/>
+        numColumns={2} data={Suits}  renderItem={({item})=> <Card Hair={item}/>}/>
     </View>
 
     
